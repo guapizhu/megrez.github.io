@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>megrez</title>
   
-  
+  <subtitle>不积跬步，无以至千里</subtitle>
   <link href="https://guapizhu.github.io/atom.xml" rel="self"/>
   
   <link href="https://guapizhu.github.io/"/>
@@ -10,7 +10,7 @@
   <id>https://guapizhu.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>megrez</name>
     
   </author>
   
@@ -33,6 +33,33 @@
     
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>在这里</title>
+    <link href="https://guapizhu.github.io/2018/08/02/%E5%9C%A8%E8%BF%99%E9%87%8C/"/>
+    <id>https://guapizhu.github.io/2018/08/02/%E5%9C%A8%E8%BF%99%E9%87%8C/</id>
+    <published>2018-08-02T03:41:10.000Z</published>
+    <updated>2020-09-08T02:31:39.713Z</updated>
+    
+    <content type="html"><![CDATA[<p>123</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;123&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="web前端" scheme="https://guapizhu.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="博客" scheme="https://guapizhu.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="hexo" scheme="https://guapizhu.github.io/tags/hexo/"/>
     
   </entry>
   
