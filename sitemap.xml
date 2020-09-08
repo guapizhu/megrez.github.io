@@ -9,13 +9,6 @@
   </url>
   
   <url>
-    <loc>https://guapizhu.github.io/2018/08/02/zai-zhe-li/</loc>
-    
-    <lastmod>2020-09-08</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://guapizhu.github.io/404.html</loc>
     
     <lastmod>2020-09-08</lastmod>
@@ -50,13 +43,6 @@
     
   </url>
   
-  <url>
-    <loc>https://guapizhu.github.io/2020/09/07/hello-world/</loc>
-    
-    <lastmod>2020-09-07</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://guapizhu.github.io/</loc>
@@ -80,27 +66,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://guapizhu.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2020-09-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://guapizhu.github.io/tags/hexo/</loc>
-    <lastmod>2020-09-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
-  
-  <url>
-    <loc>https://guapizhu.github.io/categories/web%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2020-09-08</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
   
 </urlset>

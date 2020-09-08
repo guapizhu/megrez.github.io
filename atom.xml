@@ -23,12 +23,12 @@
     <published>2020-09-08T07:00:00.000Z</published>
     <updated>2020-09-08T07:18:42.948Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="git-clone-代理"><a href="#git-clone-代理" class="headerlink" title="git clone 代理"></a>git clone 代理</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.https://github.com.proxy socks5://127.0.0.1:10808</span><br><span class="line">git config --global https.https://github.com.proxy socks5://127.0.0.1:10808</span><br></pre></td></tr></table></figure><h2 id="git-clone-换源"><a href="#git-clone-换源" class="headerlink" title="git clone 换源"></a>git clone 换源</h2><p>将原本的网站中的<br><a href="http://github.com/">http://github.com</a><br>替换为github.com.cnpmjs.org</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="git-clone-代理"><a href="#git-clone-代理" class="headerlink" title="git clone 代理"></a>git clone 代理</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> config --global http.https://github.com.proxy socks5://127.0.0.1:10808<span class="token function">git</span> config --global https.https://github.com.proxy socks5://127.0.0.1:10808<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h2 id="git-clone-换源"><a href="#git-clone-换源" class="headerlink" title="git clone 换源"></a>git clone 换源</h2><p>将原本的网站中的<br><a href="http://github.com/">http://github.com</a><br>替换为github.com.cnpmjs.org</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h2 id=&quot;git-clone-代理&quot;&gt;&lt;a href=&quot;#git-clone-代理&quot; class=&quot;headerlink&quot; title=&quot;git clone 代理&quot;&gt;&lt;/a&gt;git clone 代理&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;t</summary>
+    <summary type="html">&lt;h2 id=&quot;git-clone-代理&quot;&gt;&lt;a href=&quot;#git-clone-代理&quot; class=&quot;headerlink&quot; title=&quot;git clone 代理&quot;&gt;&lt;/a&gt;git clone 代理&lt;/h2&gt;&lt;pre class=&quot;line-numbers language</summary>
       
     
     
@@ -37,53 +37,6 @@
     <category term="加速" scheme="https://guapizhu.github.io/tags/%E5%8A%A0%E9%80%9F/"/>
     
     <category term="换源" scheme="https://guapizhu.github.io/tags/%E6%8D%A2%E6%BA%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://guapizhu.github.io/2020/09/07/hello-world/"/>
-    <id>https://guapizhu.github.io/2020/09/07/hello-world/</id>
-    <published>2020-09-07T06:26:26.502Z</published>
-    <updated>2020-09-07T06:26:26.502Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>在这里</title>
-    <link href="https://guapizhu.github.io/2018/08/02/zai-zhe-li/"/>
-    <id>https://guapizhu.github.io/2018/08/02/zai-zhe-li/</id>
-    <published>2018-08-02T03:41:10.000Z</published>
-    <updated>2020-09-08T02:31:39.713Z</updated>
-    
-    <content type="html"><![CDATA[<p>123</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;123&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="web前端" scheme="https://guapizhu.github.io/categories/web%E5%89%8D%E7%AB%AF/"/>
-    
-    
-    <category term="博客" scheme="https://guapizhu.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-    <category term="hexo" scheme="https://guapizhu.github.io/tags/hexo/"/>
     
   </entry>
   
