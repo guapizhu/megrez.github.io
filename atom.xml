@@ -6,7 +6,7 @@
   <link href="https://guapizhu.github.io/atom.xml" rel="self"/>
   
   <link href="https://guapizhu.github.io/"/>
-  <updated>2020-09-07T06:26:26.502Z</updated>
+  <updated>2020-09-08T07:18:42.948Z</updated>
   <id>https://guapizhu.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git clone 很慢</title>
+    <link href="https://guapizhu.github.io/2020/09/08/git-clone-hen-man/"/>
+    <id>https://guapizhu.github.io/2020/09/08/git-clone-hen-man/</id>
+    <published>2020-09-08T07:00:00.000Z</published>
+    <updated>2020-09-08T07:18:42.948Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="git-clone-代理"><a href="#git-clone-代理" class="headerlink" title="git clone 代理"></a>git clone 代理</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.https://github.com.proxy socks5://127.0.0.1:10808</span><br><span class="line">git config --global https.https://github.com.proxy socks5://127.0.0.1:10808</span><br></pre></td></tr></table></figure><h2 id="git-clone-换源"><a href="#git-clone-换源" class="headerlink" title="git clone 换源"></a>git clone 换源</h2><p>将原本的网站中的<br><a href="http://github.com/">http://github.com</a><br>替换为github.com.cnpmjs.org</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;git-clone-代理&quot;&gt;&lt;a href=&quot;#git-clone-代理&quot; class=&quot;headerlink&quot; title=&quot;git clone 代理&quot;&gt;&lt;/a&gt;git clone 代理&lt;/h2&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;t</summary>
+      
+    
+    
+    
+    
+    <category term="加速" scheme="https://guapizhu.github.io/tags/%E5%8A%A0%E9%80%9F/"/>
+    
+    <category term="换源" scheme="https://guapizhu.github.io/tags/%E6%8D%A2%E6%BA%90/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

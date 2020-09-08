@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>git clone 很慢</title>
+      <link href="/2020/09/08/git-clone-hen-man/"/>
+      <url>/2020/09/08/git-clone-hen-man/</url>
+      
+        <content type="html"><![CDATA[<h2 id="git-clone-代理"><a href="#git-clone-代理" class="headerlink" title="git clone 代理"></a>git clone 代理</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.https://github.com.proxy socks5://127.0.0.1:10808</span><br><span class="line">git config --global https.https://github.com.proxy socks5://127.0.0.1:10808</span><br></pre></td></tr></table></figure><h2 id="git-clone-换源"><a href="#git-clone-换源" class="headerlink" title="git clone 换源"></a>git clone 换源</h2><p>将原本的网站中的<br><a href="http://github.com/">http://github.com</a><br>替换为github.com.cnpmjs.org</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 加速 </tag>
+            
+            <tag> 换源 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2020/09/07/hello-world/"/>
       <url>/2020/09/07/hello-world/</url>
