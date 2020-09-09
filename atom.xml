@@ -6,7 +6,7 @@
   <link href="https://guapizhu.github.io/atom.xml" rel="self"/>
   
   <link href="https://guapizhu.github.io/"/>
-  <updated>2020-09-08T07:18:42.948Z</updated>
+  <updated>2020-09-09T08:05:26.052Z</updated>
   <id>https://guapizhu.github.io/</id>
   
   <author>
@@ -15,6 +15,59 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>信息收集索引</title>
+    <link href="https://guapizhu.github.io/2020/09/09/xin-xi-shou-ji-suo-yin/"/>
+    <id>https://guapizhu.github.io/2020/09/09/xin-xi-shou-ji-suo-yin/</id>
+    <published>2020-09-09T08:00:00.000Z</published>
+    <updated>2020-09-09T08:05:26.052Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><strong>目标</strong><br>对于目标的信息收集,主要针对目标的服务器系统、数据库系统、中间件系统、应用程序系统、  以及边界设备等信息。以及收集针对于系统管理员的信息收集。</li><li>whois</li></ul><blockquote><p>kali上有对应工具 也可以网页查询</p></blockquote><ul><li>备案信息查询</li></ul><blockquote><p>网页查询</p></blockquote><ul><li><p>子域名挖掘</p><blockquote><p>子域名挖掘工具，如：Maltego CE , wydomain(kali)<br>搜索引擎挖掘，如：google语法 site<br>在线网页挖掘，关键字：“子域名挖掘 站长之家”<br>证书透明度公开日志枚举<br>其他： phpinfo.me/domain            dns.aizhan.com</p></blockquote></li><li><p>web站点信息收集</p></li></ul><blockquote><p>CMS识别，关键字：“CMS在线识别” ；本地工具：whatweb(kali) ，大禹CMS识别<br>文件探测，关键字：御剑，wwwsacn，dirb，dirbuster<br>对于WordPress（CMS的一种），可以使用专门的工具wpscan<br>漏洞查询：乌云</p></blockquote><ul><li>端口信息收集</li></ul><blockquote><p>使用nmap(kali)探测，例：nmap -A -v -T4 $ip<br>使用masscan探测。<br>使用在线网站探测<br>端口攻击，关键字：“端口渗透”</p></blockquote><ul><li>敏感信息收集</li></ul><blockquote><p>http报文的server头与x-powered-by头会暴露目标服务器和使用的编程语言信息。<br>google hacking ， exploit-db中有专门搜集的google hacking<br>github信息泄露</p></blockquote><ul><li>真实IP地址收集</li></ul><blockquote><p>由于CDN的存在会使你访问的服务器可能是CDN服务器<br>利用本地ping初步判断<br>利用在线ping网站判断目标网站是否有CDN，关键字：“站长之家 ping”<br>如果目标使用CDN，需绕过CDN获取真实IP<br>        1.网站的phpinfo.php<br>        2.CDN很贵，通过分站，子域名查询IP地址<br>        3.国外访问，关键字：“ping查询”<br>判断IP是否真实，通过IP访问网站</p></blockquote><ul><li>shodan<br><a href="https://xiaix.me/shodan-xin-shou-ru-keng-zhi-nan/">Shodan 新手入坑指南</a><br>自行了解shodan高级用法</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标&lt;/strong&gt;&lt;br&gt;对于目标的信息收集,主要针对目标的服务器系统、数据库系统、中间件系统、应用程序系统、  以及边界设备等信息。以及收集针对于系统管理员的信息收集。&lt;/li&gt;
+&lt;li&gt;whois&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquo</summary>
+      
+    
+    
+    
+    
+    <category term="web安全" scheme="https://guapizhu.github.io/tags/web%E5%AE%89%E5%85%A8/"/>
+    
+    <category term="信息收集" scheme="https://guapizhu.github.io/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>进化心理学摘要</title>
+    <link href="https://guapizhu.github.io/2020/09/08/jin-hua-xin-li-xue-zhai-yao/"/>
+    <id>https://guapizhu.github.io/2020/09/08/jin-hua-xin-li-xue-zhai-yao/</id>
+    <published>2020-09-08T10:00:00.000Z</published>
+    <updated>2020-09-08T10:44:28.499Z</updated>
+    
+    <content type="html"><![CDATA[<p>不建议购买后阅读，和一本专业的生物书一样，语言严谨平实。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;不建议购买后阅读，和一本专业的生物书一样，语言严谨平实。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="心理学" scheme="https://guapizhu.github.io/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+    <category term="阅读过的书籍" scheme="https://guapizhu.github.io/tags/%E9%98%85%E8%AF%BB%E8%BF%87%E7%9A%84%E4%B9%A6%E7%B1%8D/"/>
+    
+  </entry>
   
   <entry>
     <title>git clone 很慢</title>
