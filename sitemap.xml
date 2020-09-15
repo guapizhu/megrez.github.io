@@ -2,7 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://guapizhu.github.io/2020/09/12/sql-zhu-ru-ji-lu/</loc>
+    <loc>https://guapizhu.github.io/2020/09/15/xss/</loc>
+    
+    <lastmod>2020-09-15</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://guapizhu.github.io/2020/09/14/web-an-quan-ru-men/sqlmap/</loc>
+    
+    <lastmod>2020-09-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://guapizhu.github.io/2020/09/12/web-an-quan-ru-men/sql-zhu-ru-ji-lu/</loc>
     
     <lastmod>2020-09-14</lastmod>
     
@@ -16,7 +30,7 @@
   </url>
   
   <url>
-    <loc>https://guapizhu.github.io/2020/09/09/xin-xi-shou-ji-suo-yin/</loc>
+    <loc>https://guapizhu.github.io/2020/09/09/web-an-quan-ru-men/xin-xi-shou-ji-suo-yin/</loc>
     
     <lastmod>2020-09-09</lastmod>
     
@@ -74,7 +88,7 @@
 
   <url>
     <loc>https://guapizhu.github.io/</loc>
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -82,49 +96,70 @@
   
   <url>
     <loc>https://guapizhu.github.io/tags/%E5%8A%A0%E9%80%9F/</loc>
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://guapizhu.github.io/tags/%E6%8D%A2%E6%BA%90/</loc>
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://guapizhu.github.io/tags/web%E5%AE%89%E5%85%A8/</loc>
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://guapizhu.github.io/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</loc>
-    <lastmod>2020-09-14</lastmod>
+    <loc>https://guapizhu.github.io/tags/xss/</loc>
+    <lastmod>2020-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://guapizhu.github.io/tags/sql%E6%B3%A8%E5%85%A5/</loc>
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://guapizhu.github.io/tags/sqlmap/</loc>
+    <lastmod>2020-09-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://guapizhu.github.io/tags/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2020-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://guapizhu.github.io/tags/%E5%BF%83%E7%90%86%E5%AD%A6/</loc>
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://guapizhu.github.io/tags/%E9%98%85%E8%AF%BB%E8%BF%87%E7%9A%84%E4%B9%A6%E7%B1%8D/</loc>
-    <lastmod>2020-09-14</lastmod>
+    <lastmod>2020-09-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://guapizhu.github.io/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/</loc>
+    <lastmod>2020-09-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

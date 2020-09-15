@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="进化心理学摘要, megrez">
+    <meta name="keywords" content="sqlmap, megrez">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>进化心理学摘要 | megrez</title>
+    <title>sqlmap | megrez</title>
     <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -203,12 +203,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">进化心理学摘要</h1>
+                    <h1 class="description center-align post-title">sqlmap</h1>
                 </div>
             </div>
         </div>
@@ -325,12 +325,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%BF%83%E7%90%86%E5%AD%A6/">
-                                <span class="chip bg-color">心理学</span>
+                            <a href="/tags/web%E5%AE%89%E5%85%A8/">
+                                <span class="chip bg-color">web安全</span>
                             </a>
                         
-                            <a href="/tags/%E9%98%85%E8%AF%BB%E8%BF%87%E7%9A%84%E4%B9%A6%E7%B1%8D/">
-                                <span class="chip bg-color">阅读过的书籍</span>
+                            <a href="/tags/sqlmap/">
+                                <span class="chip bg-color">sqlmap</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">
+                                <span class="chip bg-color">学习记录</span>
                             </a>
                         
                     </div>
@@ -345,28 +349,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-08
+                    2020-09-14
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-09-08
+                    2020-09-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    25
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    5 分
                 </div>
                 
 
@@ -381,7 +385,123 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>不建议购买后阅读，和一本专业的生物书一样，语言严谨平实。</p>
+                <ul>
+<li>小知识</li>
+</ul>
+<blockquote>
+<ol>
+<li>cookie注入检测level必须到达到2以上</li>
+<li>–cookie=”$cookie”    指定使用的cookie</li>
+<li>HTTP主机头注入检测level必须达到5</li>
+<li>Refer头注入检测level要[3,5]</li>
+<li>-hh 详细的帮助信息</li>
+<li>–delay 0.5      延迟包与包的间距0.5s</li>
+<li>–timeout 10.5    超时时间，若10.5s没响应，就不再等待，默认30s。</li>
+<li>–retries 5 重试次数，默认3次</li>
+<li>–randomize $参数名称  对参数的值进行随机化</li>
+<li>–skip-urlencode     不进行URL编码。注：在某些情况下，后端web服务器不遵循RFC标准，需要以原始的非编码形式发送值。    </li>
+<li>–ignore-401  忽略http认证直接探测。注： sqlmap遇到401默认会停止探测</li>
+<li>URI注入需要指定参数，sqlmap不会自动化探测，参数指定方法：在参数后加“*”，如：”URL?id=1*&amp;name=qqq*”</li>
+</ol>
+</blockquote>
+<ul>
+<li><p>小功能</p>
+<blockquote>
+<ol>
+<li>指定DBMS，加快探测，格式：–dbms $数据库名称 [$版本号] ，如：–dbms mysql 5.0</li>
+<li>指定OS，加快探测，如：–os windows ， –os linux</li>
+<li>关闭负载转换机制，在目标mysql版本老旧时需要用到，参数：–no-cast</li>
+</ol>
+</blockquote>
+<ul>
+<li><p>sqlmap利用sql注入获取信息参数</p>
+<blockquote>
+<p> -f –fingerprint 指纹信息<br>  –banner banner信息<br> –dbs 所有数据库名<br> –users 所有用户名<br> –current-db     当前数据库名<br> –current-user      当前用户名</p>
+</blockquote>
+</li>
+<li><p>sqlmap探测URL</p>
+<blockquote>
+<p>-u –url ：<strong>对单一url进行探测</strong>，URL格式：http(s): //targeturl[:port]/[…]，如：python  sqlmap.py -u “http: //<a target="_blank" rel="noopener" href="http://www.target/">www.target</a>. co/vuln.php?id=1” –banner</p>
+<p><strong>sqlmap从文件中读取数据探测多个URL</strong>：<br>1、-l 从Burpsuite proxy ，WebScarab proxy中读取http请求日志文件<br>2、-x 从 sitemap.xml站点地图文件中读取目标探测。<br>3、-m 从多行文本格式文件读取多个目标,对多个目标进行探测。<br><strong>4、-r 从文本文件中读取Http请求作为Sq注入探测的目标。</strong><br>5、-c 从配置文件 sqlmap conf中读取目标探测。</p>
+<p><strong>利用google语法找站探测</strong>，如：python sqlmap.py -g “inurl: &quot;.php?id=1””</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>sqlmap直连数据库</li>
+</ul>
+<blockquote>
+<p>1.<strong>服务型数据库</strong>(前提知道数据库用户名和密码)  ：<br>DBMS: //USER: PASSWORDODBMS IP: DBMS_PORT/DATABASE_NAME(MySQL, Orace  Server, Microsoft SQL Server,PostgreSQL,etc.)<br>如：python sqlmap.py -d “mysql://admin:admin@192. 168.21.17: 3306/testdb” -f –banner –dbs –users<br>2.<strong>文件型数据库</strong>(前提知道数据库绝对路径) ：<br>DBMS: //DATABASE FILEPATH(SQLite, Microsoft Access, Firebird, etc.）</p>
+</blockquote>
+<ul>
+<li><p>sqlmap使用POST探测</p>
+<blockquote>
+<p>如：python sqlmap.py -u “$url” –data “$POST” –banner</p>
+</blockquote>
+</li>
+<li><p>sqlmap指定分割符</p>
+</li>
+</ul>
+<blockquote>
+<p>sqlmap只能识别默认的分割符&amp;，若要指定分割符，使用参数 –param,如：python sqlmap.py -u “$URL” –data=”query=foobar;id=1” –param-del=”;” –banner</p>
+</blockquote>
+<ul>
+<li>sqlmap指定测试参数</li>
+</ul>
+<blockquote>
+<p>指定需要探测的参数：-p  ，如：(?page=1&amp;id=2 -p “page,id”)<br>忽略需要探测的参数：–skip ，如： –skip “page,id”</p>
+</blockquote>
+<ul>
+<li>sqlmap 修改默认User-Agent</li>
+</ul>
+<blockquote>
+<p>1.用自带参数修改<br>默认情况下sqlmap的HTTP请求头中User-Agent值是：sqlmap/1.0-dev-xxxxxxx (<a target="_blank" rel="noopener" href="http://sqlmap.org/">http://sqlmap.org</a>)<br> 可以使用–user-anget参数来修改，同时也可以使–random-agnet参数来随机的从./txt/user-agents.txt中获取。<br><strong>当–level参数设定为3或者3以上的时候，会尝试对User-Angent进行注入。</strong><br> 2.修改源代码<br>打开sql目录下的\lib\core\option.py<br>翻到def _defaultHTTPUserAgent()函数，1231行，找到函数末尾<br>把<br> return “%s (%s)” % (VERSION_STRING, SITE)<br> 修改为：<br> return “Googlebot/2.1 (+<a target="_blank" rel="noopener" href="http://www.google.com/bot.html)%E2%80%9D">http://www.google.com/bot.html)”</a><br><strong>推选使用第二种方法</strong>，一次修改终身受益，不用每次添加参数修改！</p>
+</blockquote>
+<ul>
+<li>sqlmap设置HTTP协议认证参数</li>
+</ul>
+<blockquote>
+<p>Sqlmap中设置HTTP协议认证的参数：–auth-type和–auth-cred<br>其中-auth-type支持Basic、Digest、NTLM<br>    –auth-cred认证语法为：username:password<br>如：python sqlmap.py -u “http:/url/arit.php?id=1” –auth-type Basic –auth-cred “testuser.testpass”</p>
+</blockquote>
+<p>图示：<br><img src="data:image/png;base64,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" alt="avatar"></p>
+<ul>
+<li><p>sqlmap设置代理及tor代理</p>
+<blockquote>
+<p>略</p>
+</blockquote>
+</li>
+<li><p>sqlmap过滤burpsuit日志文件中的url进行扫描</p>
+</li>
+</ul>
+<blockquote>
+<p>因为日志文件中会有很多http包，过滤会大大提升效率<br>如（–scope python正则表达式）：<br>python sqlmap.py -I burp.log –scope=”(www)?.targett.(comlnetlorg)”</p>
+</blockquote>
+<ul>
+<li><strong>sqlmap 设置安全模式</strong></li>
+</ul>
+<blockquote>
+<p>避免在多次请求失败后销毁会话<br>有时,如果执行了一定数量的不成功请求,则在此期间的web应用程序或检查技术会销毁会话。这可能发生在 sqlmap的检测阶段或利用任何盲SQL注入类型时。原因是SQL有效负载不一定返回输出,因此可能会向应用程序会  话管理或检查技术发出信号。<br> –safe-url, –safe-post, –safe-req –safe-freq<br> 通过这种方式, sqlmap将访问每个预定义数量的请求,而不对某个安全URL执行任何类型的注入。</p>
+</blockquote>
+<ul>
+<li>sqlmap提升探测速度</li>
+</ul>
+<blockquote>
+<ol>
+<li>设置持久连接，即http报文中的connection：keep-alive，参数：–keep-alive</li>
+<li>不接受http报文中的body，常用于盲注，原理是使用http的head方法，参数：–null-connection</li>
+<li>多线程，默认1线程，最多10线程，参数：–thread $thread_number</li>
+<li>预测输出，这个参数主要是根据返回结果与sqlmap自带的一个表（/sqlmap/common-outputs.txt）里面的内容进行比对，缩小范围并使用不同的payloads进行更有针对性的检测，从而提高效率，参数：–predict-output</li>
+<li><strong>开启所有性能优化参数</strong>，参数：-o</li>
+</ol>
+</blockquote>
+<ul>
+<li>sqlmap的tamper脚本：绕WAF用</li>
+</ul>
+<blockquote>
+<p>设置tamper脚本，可以设置多个脚本如：–tamper “x1.py,x2.py”<br>sqlmap的tamper脚本目录为/user/share/sqlmap/tamper</p>
+</blockquote>
 
             </div>
             <hr/>
@@ -407,7 +527,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://guapizhu.github.io/2020/09/08/jin-hua-xin-li-xue-zhai-yao/">https://guapizhu.github.io/2020/09/08/jin-hua-xin-li-xue-zhai-yao/</a>
+                    <a href="https://guapizhu.github.io/2020/09/14/web-an-quan-ru-men/sqlmap/">https://guapizhu.github.io/2020/09/14/web-an-quan-ru-men/sqlmap/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -445,12 +565,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%BF%83%E7%90%86%E5%AD%A6/">
-                                    <span class="chip bg-color">心理学</span>
+                                <a href="/tags/web%E5%AE%89%E5%85%A8/">
+                                    <span class="chip bg-color">web安全</span>
                                 </a>
                             
-                                <a href="/tags/%E9%98%85%E8%AF%BB%E8%BF%87%E7%9A%84%E4%B9%A6%E7%B1%8D/">
-                                    <span class="chip bg-color">阅读过的书籍</span>
+                                <a href="/tags/sqlmap/">
+                                    <span class="chip bg-color">sqlmap</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">
+                                    <span class="chip bg-color">学习记录</span>
                                 </a>
                             
                         </div>
@@ -622,37 +746,38 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/09/09/web-an-quan-ru-men/xin-xi-shou-ji-suo-yin/">
+                <a href="/2020/09/15/xss/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="信息收集索引">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="xss">
                         
-                        <span class="card-title">信息收集索引</span>
+                        <span class="card-title">xss</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
-目标对于目标的信息收集,主要针对目标的服务器系统、数据库系统、中间件系统、应用程序系统、  以及边界设备等信息。以及收集针对于系统管理员的信息收集。
-whois
+xss靶场
 
 
-kali上有对应工具 也可以网页查询
+XSS Challenges
 
 
-备案信息查询
+beef
+xss修改网页链接至恶意URL，利用beef渗透。浏览器利用框架BeEF
 
 
-网页查询
 
-
+附，修改超链接网址JS代码：
+&lt;script>  
+window.onload = func
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-09
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-15
                         </span>
                         <span class="publish-author">
                             
@@ -669,8 +794,8 @@ kali上有对应工具 也可以网页查询
                         <span class="chip bg-color">web安全</span>
                     </a>
                     
-                    <a href="/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/">
-                        <span class="chip bg-color">信息收集</span>
+                    <a href="/tags/xss/">
+                        <span class="chip bg-color">xss</span>
                     </a>
                     
                 </div>
@@ -684,25 +809,34 @@ kali上有对应工具 也可以网页查询
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/08/git-clone-hen-man/">
+                <a href="/2020/09/12/web-an-quan-ru-men/sql-zhu-ru-ji-lu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="git clone 很慢">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="sql注入记录">
                         
-                        <span class="card-title">git clone 很慢</span>
+                        <span class="card-title">sql注入记录</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            git clone 代理git config --global http.https://github.com.proxy socks5://127.0.0.1:10808
-git config --global https.https:/
+                            
+利用order by $column 探测字段数
+
+
+在有报错信息的前提下，如果$column大于原来的字段数，则会报错
+
+
+利用 union select 1,2,3… 猜解字段所在的列
+
+
+select直接加数字串时，可以不写后面的表
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-12
                             </span>
                         <span class="publish-author">
                             
@@ -715,12 +849,12 @@ git config --global https.https:/
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8A%A0%E9%80%9F/">
-                        <span class="chip bg-color">加速</span>
+                    <a href="/tags/web%E5%AE%89%E5%85%A8/">
+                        <span class="chip bg-color">web安全</span>
                     </a>
                     
-                    <a href="/tags/%E6%8D%A2%E6%BA%90/">
-                        <span class="chip bg-color">换源</span>
+                    <a href="/tags/sql%E6%B3%A8%E5%85%A5/">
+                        <span class="chip bg-color">sql注入</span>
                     </a>
                     
                 </div>
