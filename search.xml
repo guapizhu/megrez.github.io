@@ -4,6 +4,46 @@
   
     
     <entry>
+      <title>kali2020安装jdk</title>
+      <link href="/2020/09/18/kali2020-an-zhuang-jdk/"/>
+      <url>/2020/09/18/kali2020-an-zhuang-jdk/</url>
+      
+        <content type="html"><![CDATA[<ul><li>下载那个tar包，不要deb，这个deb装在哪我都不知道</li><li>配置/etc/profile，追加，<strong>以下所有具体内容视具体情况定</strong></li></ul><pre class="line-numbers language-bash"><code class="language-bash">JAVA_HOME<span class="token operator">=</span>/home/megrez/myEnvir/jdk-14.0.1/CLASSPATH<span class="token operator">=</span>.:<span class="token variable">$JAVA_HOME</span>/lib.tools.jarPATH<span class="token operator">=</span><span class="token variable">$JAVA_HOME</span>/bin:<span class="token variable">$PATH</span><span class="token function">export</span> JAVA_HOME CLASSPATH PATH<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><ul><li>配置～/.bashrc</li></ul><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">export</span> JAVA_HOME<span class="token operator">=</span>/home/megrez/myEnvir/jdk-14.0.1/<span class="token function">export</span> CLASSPATH<span class="token operator">=</span>.:$<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;JAVA_HOME&amp;#125;/lib</span><span class="token function">export</span> PATH<span class="token operator">=</span>$<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;JAVA_HOME&amp;#125;/bin:$PATH</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><ul><li>执行 source ~/.bashrc</li><li>执行以下代码</li></ul><pre class="line-numbers language-bash"><code class="language-bash">update-alternatives --install /usr/bin/java java /home/megrez/myEnvir/jdk-14.0.1/bin/java 1update-alternatives --install /usr/bin/javac javac /home/megrez/myEnvir/jdk-14.0.1/bin/javac 1update-alternatives --set java /home/megrez/myEnvir/jdk-14.0.1/bin/javaupdate-alternatives --set javac /home/megrez/myEnvir/jdk-14.0.1/bin/javac<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><ul><li>完成</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 环境安装 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>字典工具</title>
+      <link href="/2020/09/18/web-an-quan-ru-men/zi-dian-gong-ju/"/>
+      <url>/2020/09/18/web-an-quan-ru-men/zi-dian-gong-ju/</url>
+      
+        <content type="html"><![CDATA[<ul><li>HTTP basic 认证<br>采用base64编码明文传输</li><li>cupp<br>制作字典，简单且强大。</li><li>pydictor<br>制作字典，提供大量特性。</li><li>dymerge<br>字典合并</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> web安全 </tag>
+            
+            <tag> 字典 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>xss</title>
       <link href="/2020/09/15/xss/"/>
       <url>/2020/09/15/xss/</url>

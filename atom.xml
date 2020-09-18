@@ -6,7 +6,7 @@
   <link href="https://guapizhu.github.io/atom.xml" rel="self"/>
   
   <link href="https://guapizhu.github.io/"/>
-  <updated>2020-09-15T10:21:19.308Z</updated>
+  <updated>2020-09-18T03:02:07.245Z</updated>
   <id>https://guapizhu.github.io/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>kali2020安装jdk</title>
+    <link href="https://guapizhu.github.io/2020/09/18/kali2020-an-zhuang-jdk/"/>
+    <id>https://guapizhu.github.io/2020/09/18/kali2020-an-zhuang-jdk/</id>
+    <published>2020-09-18T03:00:00.000Z</published>
+    <updated>2020-09-18T03:02:07.245Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>下载那个tar包，不要deb，这个deb装在哪我都不知道</li><li>配置/etc/profile，追加，<strong>以下所有具体内容视具体情况定</strong></li></ul><pre class="line-numbers language-bash"><code class="language-bash">JAVA_HOME<span class="token operator">=</span>/home/megrez/myEnvir/jdk-14.0.1/CLASSPATH<span class="token operator">=</span>.:<span class="token variable">$JAVA_HOME</span>/lib.tools.jarPATH<span class="token operator">=</span><span class="token variable">$JAVA_HOME</span>/bin:<span class="token variable">$PATH</span><span class="token function">export</span> JAVA_HOME CLASSPATH PATH<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><ul><li>配置～/.bashrc</li></ul><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">export</span> JAVA_HOME<span class="token operator">=</span>/home/megrez/myEnvir/jdk-14.0.1/<span class="token function">export</span> CLASSPATH<span class="token operator">=</span>.:$<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;JAVA_HOME&amp;#125;/lib</span><span class="token function">export</span> PATH<span class="token operator">=</span>$<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;JAVA_HOME&amp;#125;/bin:$PATH</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><ul><li>执行 source ~/.bashrc</li><li>执行以下代码</li></ul><pre class="line-numbers language-bash"><code class="language-bash">update-alternatives --install /usr/bin/java java /home/megrez/myEnvir/jdk-14.0.1/bin/java 1update-alternatives --install /usr/bin/javac javac /home/megrez/myEnvir/jdk-14.0.1/bin/javac 1update-alternatives --set java /home/megrez/myEnvir/jdk-14.0.1/bin/javaupdate-alternatives --set javac /home/megrez/myEnvir/jdk-14.0.1/bin/javac<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><ul><li>完成</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;下载那个tar包，不要deb，这个deb装在哪我都不知道&lt;/li&gt;
+&lt;li&gt;配置/etc/profile，追加，&lt;strong&gt;以下所有具体内容视具体情况定&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&quot;line-numbers languag</summary>
+      
+    
+    
+    
+    
+    <category term="环境安装" scheme="https://guapizhu.github.io/tags/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>字典工具</title>
+    <link href="https://guapizhu.github.io/2020/09/18/web-an-quan-ru-men/zi-dian-gong-ju/"/>
+    <id>https://guapizhu.github.io/2020/09/18/web-an-quan-ru-men/zi-dian-gong-ju/</id>
+    <published>2020-09-18T03:00:00.000Z</published>
+    <updated>2020-09-18T03:00:28.864Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>HTTP basic 认证<br>采用base64编码明文传输</li><li>cupp<br>制作字典，简单且强大。</li><li>pydictor<br>制作字典，提供大量特性。</li><li>dymerge<br>字典合并</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;HTTP basic 认证&lt;br&gt;采用base64编码明文传输&lt;/li&gt;
+&lt;li&gt;cupp&lt;br&gt;制作字典，简单且强大。&lt;/li&gt;
+&lt;li&gt;pydictor&lt;br&gt;制作字典，提供大量特性。&lt;/li&gt;
+&lt;li&gt;dymerge&lt;br&gt;字典合并&lt;/li&gt;
+&lt;/ul&gt;
+</summary>
+      
+    
+    
+    
+    
+    <category term="web安全" scheme="https://guapizhu.github.io/tags/web%E5%AE%89%E5%85%A8/"/>
+    
+    <category term="字典" scheme="https://guapizhu.github.io/tags/%E5%AD%97%E5%85%B8/"/>
+    
+  </entry>
   
   <entry>
     <title>xss</title>
