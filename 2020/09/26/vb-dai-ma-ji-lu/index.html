@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="信息收集索引, megrez">
+    <meta name="keywords" content="vb代码记录, megrez">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>信息收集索引 | megrez</title>
+    <title>vb代码记录 | megrez</title>
     <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -203,12 +203,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">信息收集索引</h1>
+                    <h1 class="description center-align post-title">vb代码记录</h1>
                 </div>
             </div>
         </div>
@@ -325,12 +325,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/web%E5%AE%89%E5%85%A8/">
-                                <span class="chip bg-color">web安全</span>
+                            <a href="/tags/%E5%AE%8F%E7%97%85%E6%AF%92/">
+                                <span class="chip bg-color">宏病毒</span>
                             </a>
                         
-                            <a href="/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/">
-                                <span class="chip bg-color">信息收集</span>
+                            <a href="/tags/%E8%AE%B0%E5%BD%95/">
+                                <span class="chip bg-color">记录</span>
                             </a>
                         
                     </div>
@@ -345,21 +345,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-09
+                    2020-09-26
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-09-09
+                    2020-09-26
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    446
+                    159
                 </div>
                 
 
@@ -381,51 +381,24 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <ul>
-<li><strong>目标</strong><br>对于目标的信息收集,主要针对目标的服务器系统、数据库系统、中间件系统、应用程序系统、  以及边界设备等信息。以及收集针对于系统管理员的信息收集。</li>
-<li>whois</li>
-</ul>
-<blockquote>
-<p>kali上有对应工具 也可以网页查询</p>
-</blockquote>
-<ul>
-<li>备案信息查询</li>
-</ul>
-<blockquote>
-<p>网页查询</p>
-</blockquote>
-<ul>
-<li><p>子域名挖掘</p>
-<blockquote>
-<p>子域名挖掘工具，如：Maltego CE , wydomain(kali)<br>搜索引擎挖掘，如：google语法 site<br>在线网页挖掘，关键字：“子域名挖掘 站长之家”<br>证书透明度公开日志枚举<br>其他： phpinfo.me/domain 与 dns.aizhan.com</p>
-</blockquote>
+                <p><a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/windows/win32/wmisdk/wmi-tasks--accounts-and-domains">vb的WMI官方示例</a></p>
+<h2 id="将数据输出至文件"><a href="#将数据输出至文件" class="headerlink" title="将数据输出至文件"></a>将数据输出至文件</h2><pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">open</span> <span class="token string">"c:\zhidao.txt"</span> <span class="token keyword">for</span> output as <span class="token comment" spellcheck="true">#1 </span>
+print   <span class="token comment" spellcheck="true">#1, "zhidao" </span>
+close   <span class="token comment" spellcheck="true">#1</span>
+//将<span class="token string">"zhidao"</span> 保存到<span class="token string">"c:\zhidao.txt"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="常用命令执行函数"><a href="#常用命令执行函数" class="headerlink" title="常用命令执行函数"></a>常用命令执行函数</h2><ul>
+<li>Shell、WScript.Shell、Application.Run等（以及前面提到的winmgmts方式）<h2 id="How-do-I-run-an-application-in-a-hidden-window"><a href="#How-do-I-run-an-application-in-a-hidden-window" class="headerlink" title="How do I run an application in a hidden window?"></a>How do I run an application in a hidden window?</h2></li>
+<li>Call the application from a script that uses the Win32_Process and Win32_ProcessStartup classes.</li>
+<li>以下代码的效果相当于在cmd中输入notepad.exe，可以输入其他任何命令</li>
+<li>关于winmgmts：<a target="_blank" rel="noopener" href="https://docs.microsoft.com/en-us/windows/win32/wmisdk/constructing-a-moniker-string">Moniker String</a><pre class="line-numbers language-bash"><code class="language-bash">Const HIDDEN_WINDOW <span class="token operator">=</span> 0
+strComputer <span class="token operator">=</span> <span class="token string">"."</span>
+Set objWMIService <span class="token operator">=</span> GetObject<span class="token punctuation">(</span><span class="token string">"winmgmts:"</span> <span class="token operator">&amp;</span> <span class="token string">"&amp;#123;impersonationLevel=impersonate&amp;#125;!\\"</span> <span class="token operator">&amp;</span> strComputer <span class="token operator">&amp;</span> <span class="token string">"\root\cimv2"</span><span class="token punctuation">)</span>
+Set objStartup <span class="token operator">=</span> objWMIService.Get<span class="token punctuation">(</span><span class="token string">"Win32_ProcessStartup"</span><span class="token punctuation">)</span>
+Set objConfig <span class="token operator">=</span> objStartup.SpawnInstance_
+objConfig.ShowWindow <span class="token operator">=</span> HIDDEN_WINDOW
+Set objProcess <span class="token operator">=</span> GetObject<span class="token punctuation">(</span><span class="token string">"winmgmts:root\cimv2:Win32_Process"</span><span class="token punctuation">)</span>
+errReturn <span class="token operator">=</span> objProcess.Create<span class="token punctuation">(</span> <span class="token string">"Notepad.exe"</span>, null, objConfig, intProcessID<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
-<li><p>web站点信息收集</p>
-</li>
-</ul>
-<blockquote>
-<p>CMS识别，关键字：“CMS在线识别” ；本地工具：whatweb(kali) ，大禹CMS识别<br>文件探测，关键字：御剑，wwwsacn，dirb，dirbuster<br>对于WordPress（CMS的一种），可以使用专门的工具wpscan<br>漏洞查询：乌云</p>
-</blockquote>
-<ul>
-<li>端口信息收集</li>
-</ul>
-<blockquote>
-<p>使用nmap(kali)探测，例：nmap -A -v -T4 $ip<br>使用masscan探测。<br>使用在线网站探测<br>端口攻击，关键字：“端口渗透”</p>
-</blockquote>
-<ul>
-<li>敏感信息收集</li>
-</ul>
-<blockquote>
-<p>http报文的server头与x-powered-by头会暴露目标服务器和使用的编程语言信息。<br>google hacking ， exploit-db中有专门搜集的google hacking<br>github信息泄露</p>
-</blockquote>
-<ul>
-<li>真实IP地址收集</li>
-</ul>
-<blockquote>
-<p>由于CDN的存在会使你访问的服务器可能是CDN服务器<br>利用本地ping初步判断<br>利用在线ping网站判断目标网站是否有CDN，关键字：“站长之家 ping”<br>如果目标使用CDN，需绕过CDN获取真实IP<br>        1.网站的phpinfo.php<br>        2.CDN很贵，通过分站，子域名查询IP地址<br>        3.国外访问，关键字：“ping查询”<br>判断IP是否真实，通过IP访问网站</p>
-</blockquote>
-<ul>
-<li>shodan<br><a target="_blank" rel="noopener" href="https://xiaix.me/shodan-xin-shou-ru-keng-zhi-nan/">Shodan 新手入坑指南</a><br>自行了解shodan高级用法</li>
 </ul>
 
             </div>
@@ -452,7 +425,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://guapizhu.github.io/2020/09/09/web-an-quan-ru-men/xin-xi-shou-ji-suo-yin/">https://guapizhu.github.io/2020/09/09/web-an-quan-ru-men/xin-xi-shou-ji-suo-yin/</a>
+                    <a href="https://guapizhu.github.io/2020/09/26/vb-dai-ma-ji-lu/">https://guapizhu.github.io/2020/09/26/vb-dai-ma-ji-lu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -490,12 +463,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/web%E5%AE%89%E5%85%A8/">
-                                    <span class="chip bg-color">web安全</span>
+                                <a href="/tags/%E5%AE%8F%E7%97%85%E6%AF%92/">
+                                    <span class="chip bg-color">宏病毒</span>
                                 </a>
                             
-                                <a href="/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/">
-                                    <span class="chip bg-color">信息收集</span>
+                                <a href="/tags/%E8%AE%B0%E5%BD%95/">
+                                    <span class="chip bg-color">记录</span>
                                 </a>
                             
                         </div>
@@ -667,26 +640,28 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/09/11/dan-yin-hao-shuang-yin-hao/">
+                <a href="/2020/09/26/powershell-hun-yao-ji-chu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="单引号 双引号">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="powershell混淆基础">
                         
-                        <span class="card-title">单引号 双引号</span>
+                        <span class="card-title">powershell混淆基础</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在单引号里写单引号php:利用 \ 转义mysql: \‘ 与 ‘’
-在双引号里写双引号php:利用 \ 转义mysql: \“ 与 “”
+                            
+循环变量’$_’
+powershell里的各种变量，命令，都有各种奇奇怪怪的简写。如：Get-Variable可以简写为n种形式，比如vARiAbLe，gv
+
 
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-26
                         </span>
                         <span class="publish-author">
                             
@@ -699,12 +674,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/web%E5%AE%89%E5%85%A8/">
-                        <span class="chip bg-color">web安全</span>
+                    <a href="/tags/%E5%AE%8F%E7%97%85%E6%AF%92/">
+                        <span class="chip bg-color">宏病毒</span>
                     </a>
                     
-                    <a href="/tags/sql%E6%B3%A8%E5%85%A5/">
-                        <span class="chip bg-color">sql注入</span>
+                    <a href="/tags/powershell/">
+                        <span class="chip bg-color">powershell</span>
                     </a>
                     
                 </div>
@@ -718,25 +693,35 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/08/jin-hua-xin-li-xue-zhai-yao/">
+                <a href="/2020/09/26/shi-yong-oletools-fen-xi-hong-bing-du/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="进化心理学摘要">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="使用oletools分析宏病毒">
                         
-                        <span class="card-title">进化心理学摘要</span>
+                        <span class="card-title">使用oletools分析宏病毒</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            不建议购买后阅读，和一本专业的生物书一样，语言严谨平实。
+                            
+github : decalage2/oletools
 
+olevba文档链接：olevba
+
+扫描文件，其中会显示出宏源码
+
+olevba $filepath
+
+不分析，只显示宏源码
+
+olevba -c/--code $filepat
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-26
                             </span>
                         <span class="publish-author">
                             
@@ -749,12 +734,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%BF%83%E7%90%86%E5%AD%A6/">
-                        <span class="chip bg-color">心理学</span>
+                    <a href="/tags/%E5%AE%8F%E7%97%85%E6%AF%92/">
+                        <span class="chip bg-color">宏病毒</span>
                     </a>
                     
-                    <a href="/tags/%E9%98%85%E8%AF%BB%E8%BF%87%E7%9A%84%E4%B9%A6%E7%B1%8D/">
-                        <span class="chip bg-color">阅读过的书籍</span>
+                    <a href="/tags/%E7%97%85%E6%AF%92%E5%88%86%E6%9E%90/">
+                        <span class="chip bg-color">病毒分析</span>
                     </a>
                     
                 </div>

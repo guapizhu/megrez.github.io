@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="信息收集索引, megrez">
+    <meta name="keywords" content="ole文件格式, megrez">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>信息收集索引 | megrez</title>
+    <title>ole文件格式 | megrez</title>
     <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -203,12 +203,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">信息收集索引</h1>
+                    <h1 class="description center-align post-title">ole文件格式</h1>
                 </div>
             </div>
         </div>
@@ -325,12 +325,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/web%E5%AE%89%E5%85%A8/">
-                                <span class="chip bg-color">web安全</span>
-                            </a>
-                        
-                            <a href="/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/">
-                                <span class="chip bg-color">信息收集</span>
+                            <a href="/tags/%E5%AE%8F%E7%97%85%E6%AF%92/">
+                                <span class="chip bg-color">宏病毒</span>
                             </a>
                         
                     </div>
@@ -345,28 +341,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-09
+                    2020-09-26
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-09-09
+                    2020-09-26
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    446
+                    779
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 
@@ -381,52 +377,154 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <ul>
-<li><strong>目标</strong><br>对于目标的信息收集,主要针对目标的服务器系统、数据库系统、中间件系统、应用程序系统、  以及边界设备等信息。以及收集针对于系统管理员的信息收集。</li>
-<li>whois</li>
-</ul>
-<blockquote>
-<p>kali上有对应工具 也可以网页查询</p>
-</blockquote>
-<ul>
-<li>备案信息查询</li>
-</ul>
-<blockquote>
-<p>网页查询</p>
-</blockquote>
-<ul>
-<li><p>子域名挖掘</p>
-<blockquote>
-<p>子域名挖掘工具，如：Maltego CE , wydomain(kali)<br>搜索引擎挖掘，如：google语法 site<br>在线网页挖掘，关键字：“子域名挖掘 站长之家”<br>证书透明度公开日志枚举<br>其他： phpinfo.me/domain 与 dns.aizhan.com</p>
-</blockquote>
-</li>
-<li><p>web站点信息收集</p>
-</li>
-</ul>
-<blockquote>
-<p>CMS识别，关键字：“CMS在线识别” ；本地工具：whatweb(kali) ，大禹CMS识别<br>文件探测，关键字：御剑，wwwsacn，dirb，dirbuster<br>对于WordPress（CMS的一种），可以使用专门的工具wpscan<br>漏洞查询：乌云</p>
-</blockquote>
-<ul>
-<li>端口信息收集</li>
-</ul>
-<blockquote>
-<p>使用nmap(kali)探测，例：nmap -A -v -T4 $ip<br>使用masscan探测。<br>使用在线网站探测<br>端口攻击，关键字：“端口渗透”</p>
-</blockquote>
-<ul>
-<li>敏感信息收集</li>
-</ul>
-<blockquote>
-<p>http报文的server头与x-powered-by头会暴露目标服务器和使用的编程语言信息。<br>google hacking ， exploit-db中有专门搜集的google hacking<br>github信息泄露</p>
-</blockquote>
-<ul>
-<li>真实IP地址收集</li>
-</ul>
-<blockquote>
-<p>由于CDN的存在会使你访问的服务器可能是CDN服务器<br>利用本地ping初步判断<br>利用在线ping网站判断目标网站是否有CDN，关键字：“站长之家 ping”<br>如果目标使用CDN，需绕过CDN获取真实IP<br>        1.网站的phpinfo.php<br>        2.CDN很贵，通过分站，子域名查询IP地址<br>        3.国外访问，关键字：“ping查询”<br>判断IP是否真实，通过IP访问网站</p>
-</blockquote>
-<ul>
-<li>shodan<br><a target="_blank" rel="noopener" href="https://xiaix.me/shodan-xin-shou-ru-keng-zhi-nan/">Shodan 新手入坑指南</a><br>自行了解shodan高级用法</li>
-</ul>
+                <h2 id="OLESSHeader"><a href="#OLESSHeader" class="headerlink" title="OLESSHeader"></a>OLESSHeader</h2><table>
+<thead>
+<tr>
+<th>字节偏移</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0x00H~0x07H ：0-7</td>
+<td>8个字节:固定值：0xD0 0xCF 0x11 0xE0 0xA1 0xB1 0x1A0xE1，表示此文件是复合文件</td>
+</tr>
+<tr>
+<td>0x08H~0x17H  ：8-23</td>
+<td>16个字节：ClassID，不过很多文件都置0</td>
+</tr>
+<tr>
+<td>0x18H~0x19H  ：24-25</td>
+<td>2个字节：一般为0x3E，表示文件格式的修订号</td>
+</tr>
+<tr>
+<td>0x1AH~0x1BH  ：26-27</td>
+<td>2个字节：一般为0x3，表示文件格式的版本号</td>
+</tr>
+<tr>
+<td>0x1CH~0x1DH  ：28-29</td>
+<td>2个字节：一般0FE 0xFF，表示文档使用的存储格式是小端模式（理论上0xFF 0xFE则表示大端存储方式）</td>
+</tr>
+<tr>
+<td>0x1EH~0x1FH  ：30-31</td>
+<td>2个字节：默认值:0x09 0x00，表示Sector的大小，当值为9时，即每个Sector为512（29）字节</td>
+</tr>
+<tr>
+<td>0x20H~0x21H  ：32-33</td>
+<td>2个字节：默认值:0x06 0x00，表示Mini-Sector的大小，当值为6时，即每个Mini-Sector为64（26）字节</td>
+</tr>
+<tr>
+<td>0x22H~0x23H  ：34-35</td>
+<td>2个字节，UInt16，预留值，置0</td>
+</tr>
+<tr>
+<td>0x24H~0x27H  ：36-39</td>
+<td>4个字节，UInt32，预留值，置0</td>
+</tr>
+<tr>
+<td>0x28H~0x2BH  ：40-43</td>
+<td>4个字节：表示目录扇区Directory Sectors的数量的数量；若版本号为3，则该值为0</td>
+</tr>
+<tr>
+<td>0x2CH~0x2FH  ：44-47</td>
+<td>4个字节：表示FAT的数量</td>
+</tr>
+<tr>
+<td>0x30H~0x33H  ：48-51</td>
+<td>4个字节：表示Directory开始的SectorID文件目录流的起始扇区编号</td>
+</tr>
+<tr>
+<td>0x34H~0x37H  ：52-55</td>
+<td>4个字节：一般置0，用于事务</td>
+</tr>
+<tr>
+<td>0x38H~0x3BH  ：56-59</td>
+<td>4个字节：表示ulMiniSectorCutoff，是最小串（Stream）的最大大小，默认为4096（0x00 0x10 0x00 0x00）</td>
+</tr>
+<tr>
+<td>0x3CH~0x3FH  ：60-63</td>
+<td>4个字节：_sectMiniFatStart ，是MiniFAT表开始的SectorID</td>
+</tr>
+<tr>
+<td>0x40H~0x43H  ：64-67</td>
+<td>4个字节：表示MiniFAT表的数量</td>
+</tr>
+<tr>
+<td>0x44H~0x47H  ：68-71</td>
+<td>4个字节：表示DIFAT开始的SectorID，DIFAT的起始扇区编号</td>
+</tr>
+<tr>
+<td>0x48H~0x4BH  ：72-75</td>
+<td>4个字节：表示DIFAT的数量</td>
+</tr>
+<tr>
+<td>0x4CH~0x1FFH ：76-511</td>
+<td>436个字节：UInt32，包含了109个DIFAT，每个DIFAT占用4个字节，是前109块FAT表的SectorID。Header中存储的了109个DIFAT数据。但是有时候109个还不够，这时候可以使用其它扇区专门存储DIFAT数据，0x44H~0x47H中记录的就是除这109项外，其他的DIFAT数据的起始扇区编号。在DIFAT扇区的最后4个字节，存储了下个DIFAT扇区的ID，以表示下个DIFAT数据的存储位置</td>
+</tr>
+</tbody></table>
+<h2 id="OLESSDirectoryEntry"><a href="#OLESSDirectoryEntry" class="headerlink" title="OLESSDirectoryEntry"></a>OLESSDirectoryEntry</h2><table>
+<thead>
+<tr>
+<th>偏移</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0x00H~0x3FH</td>
+<td>64个字节：存储DirectoryEntry名称的，并且是以Unicode存储的，即每个字符占2个字节，</td>
+</tr>
+<tr>
+<td>0x40H~0x41H</td>
+<td>2个字节：DirectoryEntry名称的长度（包括最后的“\0”）</td>
+</tr>
+<tr>
+<td>0x42H~0x42H</td>
+<td>1个字节：是DirectoryEntry的类型。0为非法，1为目录（storage），2为节点（Stream），5为根节点（Root Entry即第一个目录内容）</td>
+</tr>
+<tr>
+<td>0x43H~0x43H</td>
+<td>1个字节：节点的颜色</td>
+</tr>
+<tr>
+<td>0x44H~0x47H</td>
+<td>4个字节：该DirectoryEntry左兄弟的EntryID（第一个DirectoryEntry的EntryID为0，下同）</td>
+</tr>
+<tr>
+<td>0x48H~0x4BH</td>
+<td>4个字节：该DirectoryEntry右兄弟的EntryID</td>
+</tr>
+<tr>
+<td>0x4CH~0x4FH</td>
+<td>4个字节：该DirectoryEntry一个孩子的EntryID</td>
+</tr>
+<tr>
+<td>0x50H~0x5FH</td>
+<td>16个字节：表示CLSID</td>
+</tr>
+<tr>
+<td>0x60H~0x63H</td>
+<td>4个字节：表示UserFlags，一般是0</td>
+</tr>
+<tr>
+<td>0x64H~0x6BH</td>
+<td>8个字节：表示文件创建时间</td>
+</tr>
+<tr>
+<td>0x6CH~0x73H</td>
+<td>8个字节：表示文件修改时间</td>
+</tr>
+<tr>
+<td>0x74H~0x77H</td>
+<td>4个字节：表示该DirectoryEntry开始的SectorID</td>
+</tr>
+<tr>
+<td>0x78H~0x7BH</td>
+<td>4个字节：是该DirectoryEntry存储的所有字节长度</td>
+</tr>
+<tr>
+<td>0x7CH~0x7FH</td>
+<td>4个字节：保留置0</td>
+</tr>
+</tbody></table>
 
             </div>
             <hr/>
@@ -452,7 +550,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://guapizhu.github.io/2020/09/09/web-an-quan-ru-men/xin-xi-shou-ji-suo-yin/">https://guapizhu.github.io/2020/09/09/web-an-quan-ru-men/xin-xi-shou-ji-suo-yin/</a>
+                    <a href="https://guapizhu.github.io/2020/09/26/ole-wen-jian-ge-shi/">https://guapizhu.github.io/2020/09/26/ole-wen-jian-ge-shi/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -490,12 +588,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/web%E5%AE%89%E5%85%A8/">
-                                    <span class="chip bg-color">web安全</span>
-                                </a>
-                            
-                                <a href="/tags/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/">
-                                    <span class="chip bg-color">信息收集</span>
+                                <a href="/tags/%E5%AE%8F%E7%97%85%E6%AF%92/">
+                                    <span class="chip bg-color">宏病毒</span>
                                 </a>
                             
                         </div>
@@ -663,31 +757,42 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/09/11/dan-yin-hao-shuang-yin-hao/">
+                <a href="/2020/09/26/ole-wen-jian-ge-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="单引号 双引号">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="ole文件格式">
                         
-                        <span class="card-title">单引号 双引号</span>
+                        <span class="card-title">ole文件格式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            在单引号里写单引号php:利用 \ 转义mysql: \‘ 与 ‘’
-在双引号里写双引号php:利用 \ 转义mysql: \“ 与 “”
+                            OLESSHeader
 
+
+字节偏移
+说明
+
+
+
+0x00H~0x07H ：0-7
+8个字节:固定值：0xD0 0xCF 0x11 0xE0 0xA1 0xB1 0x1A0xE1，表示此文件是复合文件
+
+
+0x08H~0x17H  ：8-2
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-26
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -696,15 +801,12 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/web%E5%AE%89%E5%85%A8/">
-                        <span class="chip bg-color">web安全</span>
-                    </a>
-                    
-                    <a href="/tags/sql%E6%B3%A8%E5%85%A5/">
-                        <span class="chip bg-color">sql注入</span>
+                    <a href="/tags/%E5%AE%8F%E7%97%85%E6%AF%92/">
+                        <span class="chip bg-color">宏病毒</span>
                     </a>
                     
                 </div>
@@ -718,25 +820,30 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/08/jin-hua-xin-li-xue-zhai-yao/">
+                <a href="/2020/09/26/powershell-ji-lu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="进化心理学摘要">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="powershell记录">
                         
-                        <span class="card-title">进化心理学摘要</span>
+                        <span class="card-title">powershell记录</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            不建议购买后阅读，和一本专业的生物书一样，语言严谨平实。
+                            
+文章仅对作者遇到的powershell命令做记录
+一篇文章：狂吹powershell，不明觉厉
 
+powershell知识点
+About Comparison Operators
+一个宏病毒里的powershell命令cmd /K pow
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-26
                             </span>
                         <span class="publish-author">
                             
@@ -749,12 +856,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%BF%83%E7%90%86%E5%AD%A6/">
-                        <span class="chip bg-color">心理学</span>
+                    <a href="/tags/%E8%AE%B0%E5%BD%95/">
+                        <span class="chip bg-color">记录</span>
                     </a>
                     
-                    <a href="/tags/%E9%98%85%E8%AF%BB%E8%BF%87%E7%9A%84%E4%B9%A6%E7%B1%8D/">
-                        <span class="chip bg-color">阅读过的书籍</span>
+                    <a href="/tags/powershell/">
+                        <span class="chip bg-color">powershell</span>
                     </a>
                     
                 </div>
