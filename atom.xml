@@ -6,7 +6,7 @@
   <link href="https://guapizhu.github.io/atom.xml" rel="self"/>
   
   <link href="https://guapizhu.github.io/"/>
-  <updated>2020-09-26T06:46:50.794Z</updated>
+  <updated>2020-10-14T01:46:02.611Z</updated>
   <id>https://guapizhu.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ZwOpenFile failing with C0000043</title>
+    <link href="https://guapizhu.github.io/2020/10/14/nei-he-qu-dong/zwopenfile-failing-with-c0000043/"/>
+    <id>https://guapizhu.github.io/2020/10/14/nei-he-qu-dong/zwopenfile-failing-with-c0000043/</id>
+    <published>2020-10-14T01:45:00.000Z</published>
+    <updated>2020-10-14T01:46:02.611Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>报错原因<br>另一个程序正在使用此文件，进程无法访问。</li><li>解决办法<br>If the file is local, you can call IoCreateFileEx and specify<br>IO_IGNORE_SHARE_ACCESS_CHECK.<br>Note that this doesn’t do anything for a file on a network share.</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;报错原因&lt;br&gt;另一个程序正在使用此文件，进程无法访问。&lt;/li&gt;
+&lt;li&gt;解决办法&lt;br&gt;If the file is local, you can call IoCreateFileEx and specify&lt;br&gt;IO_IGNORE_SHARE_ACCE</summary>
+      
+    
+    
+    
+    
+    <category term="内核驱动" scheme="https://guapizhu.github.io/tags/%E5%86%85%E6%A0%B8%E9%A9%B1%E5%8A%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>ole文件格式</title>

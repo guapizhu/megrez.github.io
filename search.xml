@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>ZwOpenFile failing with C0000043</title>
+      <link href="/2020/10/14/nei-he-qu-dong/zwopenfile-failing-with-c0000043/"/>
+      <url>/2020/10/14/nei-he-qu-dong/zwopenfile-failing-with-c0000043/</url>
+      
+        <content type="html"><![CDATA[<ul><li>报错原因<br>另一个程序正在使用此文件，进程无法访问。</li><li>解决办法<br>If the file is local, you can call IoCreateFileEx and specify<br>IO_IGNORE_SHARE_ACCESS_CHECK.<br>Note that this doesn’t do anything for a file on a network share.</li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 内核驱动 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ole文件格式</title>
       <link href="/2020/09/26/ole-wen-jian-ge-shi/"/>
       <url>/2020/09/26/ole-wen-jian-ge-shi/</url>
