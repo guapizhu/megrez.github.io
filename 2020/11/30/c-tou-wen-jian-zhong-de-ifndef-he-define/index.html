@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="ole文件格式, megrez">
+    <meta name="keywords" content="C ++头文件中的#ifndef和#define, megrez">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>ole文件格式 | megrez</title>
+    <title>C ++头文件中的#ifndef和#define | megrez</title>
     <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -203,12 +203,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">ole文件格式</h1>
+                    <h1 class="description center-align post-title">C ++头文件中的#ifndef和#define</h1>
                 </div>
             </div>
         </div>
@@ -325,8 +325,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%AE%8F%E7%97%85%E6%AF%92/">
-                                <span class="chip bg-color">宏病毒</span>
+                            <a href="/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/">
+                                <span class="chip bg-color">小知识</span>
                             </a>
                         
                     </div>
@@ -341,28 +341,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-09-26
+                    2020-11-30
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-09-26
+                    2020-11-30
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    779
+                    274
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 
@@ -377,154 +377,40 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="OLESSHeader"><a href="#OLESSHeader" class="headerlink" title="OLESSHeader"></a>OLESSHeader</h2><table>
-<thead>
-<tr>
-<th>字节偏移</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>0x00H~0x07H ：0-7</td>
-<td>8个字节:固定值：0xD0 0xCF 0x11 0xE0 0xA1 0xB1 0x1A0xE1，表示此文件是复合文件</td>
-</tr>
-<tr>
-<td>0x08H~0x17H  ：8-23</td>
-<td>16个字节：ClassID，不过很多文件都置0</td>
-</tr>
-<tr>
-<td>0x18H~0x19H  ：24-25</td>
-<td>2个字节：一般为0x3E，表示文件格式的修订号</td>
-</tr>
-<tr>
-<td>0x1AH~0x1BH  ：26-27</td>
-<td>2个字节：一般为0x3，表示文件格式的版本号</td>
-</tr>
-<tr>
-<td>0x1CH~0x1DH  ：28-29</td>
-<td>2个字节：一般0FE 0xFF，表示文档使用的存储格式是小端模式（理论上0xFF 0xFE则表示大端存储方式）</td>
-</tr>
-<tr>
-<td>0x1EH~0x1FH  ：30-31</td>
-<td>2个字节：默认值:0x09 0x00，表示Sector的大小，当值为9时，即每个Sector为512（29）字节</td>
-</tr>
-<tr>
-<td>0x20H~0x21H  ：32-33</td>
-<td>2个字节：默认值:0x06 0x00，表示Mini-Sector的大小，当值为6时，即每个Mini-Sector为64（26）字节</td>
-</tr>
-<tr>
-<td>0x22H~0x23H  ：34-35</td>
-<td>2个字节，UInt16，预留值，置0</td>
-</tr>
-<tr>
-<td>0x24H~0x27H  ：36-39</td>
-<td>4个字节，UInt32，预留值，置0</td>
-</tr>
-<tr>
-<td>0x28H~0x2BH  ：40-43</td>
-<td>4个字节：表示目录扇区Directory Sectors的数量的数量；若版本号为3，则该值为0</td>
-</tr>
-<tr>
-<td>0x2CH~0x2FH  ：44-47</td>
-<td>4个字节：表示FAT的数量</td>
-</tr>
-<tr>
-<td>0x30H~0x33H  ：48-51</td>
-<td>4个字节：表示Directory开始的SectorID文件目录流的起始扇区编号</td>
-</tr>
-<tr>
-<td>0x34H~0x37H  ：52-55</td>
-<td>4个字节：一般置0，用于事务</td>
-</tr>
-<tr>
-<td>0x38H~0x3BH  ：56-59</td>
-<td>4个字节：表示ulMiniSectorCutoff，是最小串（Stream）的最大大小，默认为4096（0x00 0x10 0x00 0x00）</td>
-</tr>
-<tr>
-<td>0x3CH~0x3FH  ：60-63</td>
-<td>4个字节：_sectMiniFatStart ，是MiniFAT表开始的SectorID</td>
-</tr>
-<tr>
-<td>0x40H~0x43H  ：64-67</td>
-<td>4个字节：表示MiniFAT表的数量</td>
-</tr>
-<tr>
-<td>0x44H~0x47H  ：68-71</td>
-<td>4个字节：表示DIFAT开始的SectorID，DIFAT的起始扇区编号</td>
-</tr>
-<tr>
-<td>0x48H~0x4BH  ：72-75</td>
-<td>4个字节：表示DIFAT的数量</td>
-</tr>
-<tr>
-<td>0x4CH~0x1FFH ：76-511</td>
-<td>436个字节：UInt32，包含了109个DIFAT，每个DIFAT占用4个字节，是前109块FAT表的SectorID。Header中存储的了109个DIFAT数据。但是有时候109个还不够，这时候可以使用其它扇区专门存储DIFAT数据，0x44H~0x47H中记录的就是除这109项外，其他的DIFAT数据的起始扇区编号。在DIFAT扇区的最后4个字节，存储了下个DIFAT扇区的ID，以表示下个DIFAT数据的存储位置</td>
-</tr>
-</tbody></table>
-<h2 id="OLESSDirectoryEntry"><a href="#OLESSDirectoryEntry" class="headerlink" title="OLESSDirectoryEntry"></a>OLESSDirectoryEntry</h2><table>
-<thead>
-<tr>
-<th>偏移</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>0x00H~0x3FH</td>
-<td>64个字节：存储DirectoryEntry名称的，并且是以Unicode存储的，即每个字符占2个字节，</td>
-</tr>
-<tr>
-<td>0x40H~0x41H</td>
-<td>2个字节：DirectoryEntry名称的长度（包括最后的“\0”）</td>
-</tr>
-<tr>
-<td>0x42H~0x42H</td>
-<td>1个字节：是DirectoryEntry的类型。0为非法，1为目录（storage），2为节点（Stream），5为根节点（Root Entry即第一个目录内容）</td>
-</tr>
-<tr>
-<td>0x43H~0x43H</td>
-<td>1个字节：节点的颜色</td>
-</tr>
-<tr>
-<td>0x44H~0x47H</td>
-<td>4个字节：该DirectoryEntry左兄弟的EntryID（第一个DirectoryEntry的EntryID为0，下同）</td>
-</tr>
-<tr>
-<td>0x48H~0x4BH</td>
-<td>4个字节：该DirectoryEntry右兄弟的EntryID</td>
-</tr>
-<tr>
-<td>0x4CH~0x4FH</td>
-<td>4个字节：该DirectoryEntry一个孩子的EntryID</td>
-</tr>
-<tr>
-<td>0x50H~0x5FH</td>
-<td>16个字节：表示CLSID</td>
-</tr>
-<tr>
-<td>0x60H~0x63H</td>
-<td>4个字节：表示UserFlags，一般是0</td>
-</tr>
-<tr>
-<td>0x64H~0x6BH</td>
-<td>8个字节：表示文件创建时间</td>
-</tr>
-<tr>
-<td>0x6CH~0x73H</td>
-<td>8个字节：表示文件修改时间</td>
-</tr>
-<tr>
-<td>0x74H~0x77H</td>
-<td>4个字节：表示该DirectoryEntry开始的SectorID</td>
-</tr>
-<tr>
-<td>0x78H~0x7BH</td>
-<td>4个字节：是该DirectoryEntry存储的所有字节长度</td>
-</tr>
-<tr>
-<td>0x7CH~0x7FH</td>
-<td>4个字节：保留置0</td>
-</tr>
-</tbody></table>
+                <p>原文链接：<a target="_blank" rel="noopener" href="https://lkloh.github.io/2020/01/27/ifndef-define.html">https://lkloh.github.io/2020/01/27/ifndef-define.html</a></p>
+<p>从<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/1653958/why-are-ifndef-and-define-used-in-c-header-files">这里</a>总结。</p>
+<p>为什么头文件具有这样的代码？</p>
+<pre class="line-numbers language-c++"><code class="language-c++">// file circle.h
+
+#ifndef CIRCLE_H // What does this do?
+#define CIRCLE_H // What does this do?
+
+class Circle &#123;
+public:
+  Circle(uint16_t radius) : radius_(radius) &#123;&#125;
+
+  uint16_t area() const;
+
+private:
+  uint16_t radius_;
+&#125;;
+
+#endif<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这些是<code>#include</code>警卫。</p>
+<p>假设我们有一个这样的程序</p>
+<pre class="line-numbers language-c++"><code class="language-c++">// main.cc
+1 #include circle.h
+2 #include <iostream>
+3 #include <vector>
+4 #include circle.h
+
+int main() &#123;
+  Circle c(4);
+  return 0;
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>当您尝试进行编译时<code>main.cc</code>，首先，编译器会发现标头<code>circle.h</code>包含在中<code>main.cc</code>。编译器检查是否<code>CIRCLE_H</code>已定义唯一值。它没有定义，所以编译器定义它并继续前进。</p>
+<p>现在，它包含<code>iostream</code>和<code>vector</code>，然后看到<code>circle.h</code> 作者又意外添加的第二个包含。由于编译器检查并看到<code>CIRCLE_H</code>已经定义了唯一值，因此它引发编译错误，以警告作者删除第二个值<code>#include circle.h</code>。</p>
+<p>对于我们的小型示例程序而言，这是显而易见的，但是在较大的生产代码库中很容易包含两次。</p>
 
             </div>
             <hr/>
@@ -550,7 +436,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://guapizhu.github.io/2020/09/26/ole-wen-jian-ge-shi/">https://guapizhu.github.io/2020/09/26/ole-wen-jian-ge-shi/</a>
+                    <a href="https://guapizhu.github.io/2020/11/30/c-tou-wen-jian-zhong-de-ifndef-he-define/">https://guapizhu.github.io/2020/11/30/c-tou-wen-jian-zhong-de-ifndef-he-define/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -588,8 +474,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%AE%8F%E7%97%85%E6%AF%92/">
-                                    <span class="chip bg-color">宏病毒</span>
+                                <a href="/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/">
+                                    <span class="chip bg-color">小知识</span>
                                 </a>
                             
                         </div>
@@ -757,31 +643,35 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/10/14/nei-he-qu-dong/zwopenfile-failing-with-c0000043/">
+                <a href="/2020/11/30/c-tou-wen-jian-zhong-de-ifndef-he-define/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="ZwOpenFile failing with C0000043">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="C ++头文件中的#ifndef和#define">
                         
-                        <span class="card-title">ZwOpenFile failing with C0000043</span>
+                        <span class="card-title">C ++头文件中的#ifndef和#define</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-报错原因另一个程序正在使用此文件，进程无法访问。
-解决办法If the file is local, you can call IoCreateFileEx and specifyIO_IGNORE_SHARE_ACCESS_CHECK.
+                            原文链接：https://lkloh.github.io/2020/01/27/ifndef-define.html
+从这里总结。
+为什么头文件具有这样的代码？
+// file circle.h
+
+#ifndef CIRCLE_H // W
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-14
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -790,11 +680,12 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%86%85%E6%A0%B8%E9%A9%B1%E5%8A%A8/">
-                        <span class="chip bg-color">内核驱动</span>
+                    <a href="/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/">
+                        <span class="chip bg-color">小知识</span>
                     </a>
                     
                 </div>
@@ -808,30 +699,25 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/09/26/powershell-ji-lu/">
+                <a href="/2020/11/19/windows-fu-wu-kuang-jia-yu-fu-wu-de-bian-xie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="powershell记录">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Windows服务框架与服务的编写">
                         
-                        <span class="card-title">powershell记录</span>
+                        <span class="card-title">Windows服务框架与服务的编写</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-文章仅对作者遇到的powershell命令做记录
-一篇文章：狂吹powershell，不明觉厉
-
-powershell知识点
-About Comparison Operators
-一个宏病毒里的powershell命令cmd /K pow
+                            原文链接：https://blog.csdn.net/lanuage/article/details/77937407
+从NT内核开始，服务程序已经变为一种非常重要的系统进程，一般的驻守进程和普通的程序必须在桌面登录的情况下才能运行，而许多
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-19
                             </span>
                         <span class="publish-author">
                             
@@ -844,12 +730,8 @@ About Comparison Operators
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%AE%B0%E5%BD%95/">
-                        <span class="chip bg-color">记录</span>
-                    </a>
-                    
-                    <a href="/tags/powershell/">
-                        <span class="chip bg-color">powershell</span>
+                    <a href="/tags/windows%E6%9C%8D%E5%8A%A1/">
+                        <span class="chip bg-color">windows服务</span>
                     </a>
                     
                 </div>
